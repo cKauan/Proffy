@@ -19,3 +19,38 @@ body, input, button, textarea {
     font: 500 1.6rem Poppins;
     color: var(--color-text-base);
 }
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%
+    }
+}
+body {
+    background-color: black;
+}
+
+.dark {
+    position:fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 20px;
+	right: 20px;
+    background:#0C9 url('/images/brightness/light-lamp.svg') no-repeat center;
+    background-size: 35px 35px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    cursor: pointer;
+}
+.light {
+    position:fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 20px;
+	right: 20px;
+    background:#0C9 url('/images/brightness/dark-lamp.svg') no-repeat center;
+    background-size: 35px 35px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    cursor: pointer;
+}
