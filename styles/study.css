@@ -1,0 +1,326 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-header {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+}
+
+.top-bar-container a {
+    height: 3.2rem;
+    transition: opacity .2s;
+}
+
+.top-bar-container a:hover {
+    opacity: 0.6;
+}
+
+.top-bar-container img {
+    height: 1.6rem;
+}
+
+.header-content {
+    position: relative;
+    width: 90%;
+    margin: 3.2rem auto;
+}
+
+.header-content strong {
+    font: 700 3.6rem Archivo;
+    color: var(--color-title-in-primary);
+    line-height: 4.2rem;
+}
+
+#search-teachers {
+    margin-top: 3.2rem;
+}
+
+#search-teachers label {
+    color: var(--color-text-in-primary)
+}
+
+.select-block {
+    margin-bottom: 1.4rem;
+}
+
+#search-teachers button {
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 1rem 0 1rem 0;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background .2s;
+    margin-top: 3.2rem;
+}
+
+#search-teachers button:hover {
+    background-color: var(--color-secondary-dark)
+}
+
+.select-block label,
+.input-block label {
+    font-size: 1.4rem;
+    color: var(--color-text-complement)
+}
+
+.input-block input,
+.select-block select {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo;
+}
+
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.custom-select select {
+    height: 20px;
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    display: flex;
+    align-items: center;
+    height: 5.6rem;
+    background-color: #f8f8fc;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    background: url('/images/icons/arrow-down.svg') no-repeat;
+    background-size: 15px 15px;
+    top: 33px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    border: 6px solid transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    background: url('/images/icons/arrow-up.svg') no-repeat;
+    top: 30px;
+    right: 10px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #f8f8fc;
+    top: 100%;
+    border-left: 2px solid #3a3a3a;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: #ebebf5;
+    transition: background .3s;
+}
+
+
+#page-study main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+.teacher-item {
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: .8rem;
+    margin-top: 2.4rem;
+}
+
+.teacher-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50vh;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem;
+}
+
+.teacher-item header div strong {
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+}
+
+.teacher-item header span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: .4rem;
+}
+
+.teacher-item > p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.teacher-item footer {
+    padding: 3.2rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher-item footer p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-text-complement)
+}
+
+.teacher-item footer p strong {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    display: block
+}
+
+.teacher-item footer button {
+    width: 20rem;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: .8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    transition: background .2s;
+    margin-left: 1.6rem;
+}
+
+.teacher-item footer button:hover {
+    background: var(--color-secondary-dark)
+}
+
+@media (min-width: 700px) {
+    #page-study #container {
+        max-width: 100vw;
+    }
+
+    .page-header {
+        height: 340px;
+    }
+
+    .top-bar-container {
+        max-width: 1100;
+    }
+
+    .header-content {
+        margin: 0 auto;
+        max-width: 740px;
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-content strong {
+        max-width: 350px;
+    }
+    .teacher-item header,
+    .teacher-item footer {
+        padding: 32px;
+    }
+
+    #search-teachers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        position: absolute;
+        bottom: -28px;
+    }
+    #page-study main {
+        padding: 32px 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    .teacher-item > p {
+        padding: 0 32px;
+    }
+    .teacher-item footer p strong {
+        display: initial;
+        margin-left: 16px;
+    }
+    .teacher-item footer button {
+        width: 245px;
+        font-size: 16px;
+        justify-content: space-evenly;
+    }
+    .select-selected:after {
+        width: 10px;
+        height: 10px;
+        top: 40px;
+        background-size: 10px 10px;
+    }
+    .select-selected.select-arrow-active:after {
+        top: 40px;
+    }
+}
