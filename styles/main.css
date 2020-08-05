@@ -5,7 +5,7 @@
 }
 
 body,
-html {
+html, html.dark {
     height: 100vh;
 }
 
@@ -21,34 +21,38 @@ body, input, button, textarea {
     color: var(--color-text-base);
 }
 @media (min-width: 700px) {
-    :root {
+    html, html.dark {
         font-size: 62.5%
     }
 }
 
-.dark {
-    position:fixed;
+.button-darkness {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 60px;
 	height: 60px;
 	bottom: 20px;
 	right: 20px;
-    background:#0C9 url('/images/brightness/light-lamp.svg') no-repeat center;
-    background-size: 30px 30px;
-	color:#FFF;
+    background:#0C9;
 	border-radius:50px;
-	text-align:center;
-    cursor: pointer;
 }
-.light {
-    position:fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 20px;
-	right: 20px;
-    background:#0C9 url('/images/brightness/dark-lamp.svg') no-repeat center;
-    background-size: 30px 30px;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    cursor: pointer;
+
+.button-darkness input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/brightness/dark-lamp-1.svg');
+    background-color: transparent;
+    border: 0 transparent;
+    outline: none;
+}
+
+.button-darkness img {
+    width: 3.6rem;
+    height: 3.6rem;
 }
