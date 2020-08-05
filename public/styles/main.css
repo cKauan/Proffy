@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body, input, button, textarea {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+}
