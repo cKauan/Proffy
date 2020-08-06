@@ -12,6 +12,8 @@ Clone o repositório
 ```bash
 git clone https://github.com/cKauan/next-level-week-v2.git
 ```
+## :iphone: Capturas de Tela
+<img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone.jpg" width="180" height="300"> <img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone-2.jpg" width="180" height="300"> <img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone-3.jpg" width="180" height="300">
 
 ## :raised_hand: Contribuições
 Para sugestões, abra um "issue", sinta-se confortável para o fazer.
