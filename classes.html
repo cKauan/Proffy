@@ -12,12 +12,23 @@
     <link rel="stylesheet" href="styles/colors.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/classes.css">
+    <link rel="stylesheet" href="styles/forms.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Proffy | Sua Plataforma de Estudos Online!</title>
 </head>
 
-<body id="page-study">
-    <div id="container">
+<body id="page-give-classes">
+    <div class="modal" id="modal">
+        <span id="close-item">❌</span>
+        <h1>Confirmar foto?</h1>
+        <div class="modal-button">
+            <button id="confirmar" onmousedown="mouseDown()" onclick="mouseUp()"
+                onmouseup="mouseUp()">Confirmar</button>
+            <button id="cancelar">Cancelar</button>
+        </div>
+    </div>
+
+    <div id="container" class="opacity">
         <header class="page-header">
             <div class="top-bar-container">
                 <a href="/">
@@ -28,11 +39,11 @@
             <div class="header-content">
                 <strong>Que incrível que você quer dar aulas</strong>
                 <p>O primeiro passo é preencher esse formulário de inscrição</p>
-              
+
             </div>
         </header>
 
-        <main>
+        <main class="opacity">
             <form action="" id="create-class">
                 <fieldset>
                     <legend>Seus Dados</legend>
@@ -40,10 +51,14 @@
                         <label for="name">Nome Completo</label>
                         <input type="text" name="name" id="name" required>
                     </div>
-                    <div class="input-block">
-                        <label for="avatar">Foto de Perfil</label>
-                        <input type="file" name="avatar" id="avatar" required>
+                    <div class="input-wrapper">
+                        <label for="" id="main-label-avatar">Foto de Perfil</label>
+                        <label for="avatar" id="label-avatar">Selecione um arquivo</label>
+                        <input type="file" name="avatar" id="avatar" accept="image/*" required>
+                        <div id='file-name'>
+                        </div>
                     </div>
+
                     <div class="input-block">
                         <label for="whatsapp">Whatsapp</label>
                         <input type="tel" name="whatsapp" id="whatsapp" required>
@@ -53,7 +68,72 @@
                         <textarea name="bio" id="bio" required></textarea>
                     </div>
                 </fieldset>
+                <fieldset>
+                    <legend>Sobre a aula</legend>
+                    <div class="select-block custom-select">
+                        <label for="subject">Matérias</label>
+                        <select name="subject" id="subject" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="1">Artes</option>
+                            <option value="2">Biologia</option>
+                            <option value="3">Ciências</option>
+                            <option value="4">Educação física</option>
+                            <option value="5">Física</option>
+                            <option value="6">Geografia</option>
+                            <option value="7">História</option>
+                            <option value="8">Matemática</option>
+                            <option value="9">Português</option>
+                            <option value="10">Química</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <label for="cost">Custo da sua hora/aula <small>
+                                (R$)
+                            </small>
+                        </label>
+                        <input type="number" id="cost" required>
+                    </div>
+                </fieldset>
+                <fieldset id="schedule-items">
+                    <legend>
+                        Horários disponíveis
+                        <button id="add-time" type="button">+ Novo Horário</button>
+                    </legend>
+                    <div class="schedule-item">
+                        <div class="select-block">
+                            <label for="weekday">Dia da semana</label>
+                            <select name="weekday[]" required>
+                                <option value="-1">Selecione</option>
+                                <option value="0">Domingo</option>
+                                <option value="1">Segunda-feira</option>
+                                <option value="2">Terça-feira</option>
+                                <option value="3">Quarta-feira</option>
+                                <option value="4">Quinta-feira</option>
+                                <option value="5">Sexta-feira</option>
+                                <option value="6">Sábado</option>
+                            </select>
+                        </div>
+                        <div class="input-block">
+                            <label for="time_from">Das</label>
+                            <input type="time" name="time_from[]" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="time_to">Até</label>
+                            <input type="time" name="time_to[]" required>
+                        </div>
+                    </div>
+                    
+                </fieldset>
             </form>
+            <footer>
+                <p><img src="/images/icons/warning.svg" alt="Aviso importante">
+                Importante! <br>
+                Preencha todos os dados <br>
+                </p>
+                <button type="submit" form="create-class">
+                    Salvar Cadastro
+                </button>
+            </footer>
         </main>
 
     </div>
@@ -65,6 +145,8 @@
     </div>
     <script src="/scripts/brightness-mode.js"></script>
     <script src="/scripts/selected-box.js"></script>
+    <script src="/scripts/input-file.js"></script>
+    <script src="/scripts/addField.js"></script>
 
 </body>
 

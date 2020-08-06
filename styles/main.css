@@ -7,6 +7,7 @@
 body,
 html, html.dark {
     height: 100vh;
+
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     background-color: var(--color-background);
     align-items: center;
     justify-content: center;
+
 }
 
 body, input, button, textarea {
@@ -36,7 +38,7 @@ body, input, button, textarea {
 	bottom: 20px;
 	right: 20px;
     background:#0C9;
-	border-radius:50px;
+    border-radius:50px;
 }
 
 .button-darkness input {
@@ -50,6 +52,7 @@ body, input, button, textarea {
     background-color: transparent;
     border: 0 transparent;
     outline: none;
+    cursor: pointer;
 }
 
 .button-darkness img {
