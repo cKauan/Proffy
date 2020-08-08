@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/classes.css">
     <link rel="stylesheet" href="styles/forms.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon">
     <title>Proffy | Sua Plataforma de Estudos Online!</title>
 </head>
 
@@ -32,9 +32,9 @@
         <header class="page-header">
             <div class="top-bar-container">
                 <a href="/">
-                    <img src="/images/icons/back.svg" alt="Voltar">
+                    <img src="images/icons/back.svg" alt="Voltar">
                 </a>
-                <img src="/images/logo.svg" alt="Proffy">
+                <img src="images/logo.svg" alt="Proffy">
             </div>
             <div class="header-content">
                 <strong>Que incrível que você quer dar aulas</strong>
@@ -44,7 +44,7 @@
         </header>
 
         <main class="opacity">
-            <form action="" id="create-class">
+            <form action="/study" name="create-class" method="POST" enctype="multipart/form-data" id="create-class">
                 <fieldset>
                     <legend>Seus Dados</legend>
                     <div class="input-block">
@@ -54,7 +54,9 @@
                     <div class="input-wrapper">
                         <label for="" id="main-label-avatar">Foto de Perfil</label>
                         <label for="avatar" id="label-avatar">Selecione um arquivo</label>
-                        <input type="file" name="avatar" id="avatar" accept="image/*" required>
+                        <input type="text" name="avatar" id="hidden-text" hidden>
+                        <input type="file" name="avatar1" id="avatar" accept="image/*" required>
+                        <!-- <input type="file" name="avatar" id="avatar" accept="image/*" required> -->
                         <div id='file-name'>
                         </div>
                     </div>
@@ -74,16 +76,10 @@
                         <label for="subject">Matérias</label>
                         <select name="subject" id="subject" required>
                             <option value="">Selecione uma opção</option>
-                            <option value="1">Artes</option>
-                            <option value="2">Biologia</option>
-                            <option value="3">Ciências</option>
-                            <option value="4">Educação física</option>
-                            <option value="5">Física</option>
-                            <option value="6">Geografia</option>
-                            <option value="7">História</option>
-                            <option value="8">Matemática</option>
-                            <option value="9">Português</option>
-                            <option value="10">Química</option>
+                            {%for subject in subjects%}
+                            <option value="{{loop.index}}">{{subject}}
+                            </option>
+                            {%endfor%}
                         </select>
                     </div>
                     <div class="input-block">
@@ -91,7 +87,7 @@
                                 (R$)
                             </small>
                         </label>
-                        <input type="number" id="cost" required>
+                        <input name="cost" type="number" id="cost" required>
                     </div>
                 </fieldset>
                 <fieldset id="schedule-items">
@@ -104,13 +100,11 @@
                             <label for="weekday">Dia da semana</label>
                             <select name="weekday[]" required>
                                 <option value="-1">Selecione</option>
-                                <option value="0">Domingo</option>
-                                <option value="1">Segunda-feira</option>
-                                <option value="2">Terça-feira</option>
-                                <option value="3">Quarta-feira</option>
-                                <option value="4">Quinta-feira</option>
-                                <option value="5">Sexta-feira</option>
-                                <option value="6">Sábado</option>
+                                {%for weekday in weekdays%}
+                                <option value="{{loop.index0}}">
+                                    {{weekday}}
+                                </option>
+                                {%endfor%}
                             </select>
                         </div>
                         <div class="input-block">
@@ -122,13 +116,13 @@
                             <input type="time" name="time_to[]" required>
                         </div>
                     </div>
-                    
+
                 </fieldset>
             </form>
             <footer>
-                <p><img src="/images/icons/warning.svg" alt="Aviso importante">
-                Importante! <br>
-                Preencha todos os dados <br>
+                <p><img src="images/icons/warning.svg" alt="Aviso importante">
+                    Importante! <br>
+                    Preencha todos os dados <br>
                 </p>
                 <button type="submit" form="create-class">
                     Salvar Cadastro
@@ -141,12 +135,12 @@
 
     <div class="button-darkness">
         <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" />
-        <img src="/images/brightness/dark-lamp-1.svg" alt="">
+        <img src="images/brightness/dark-lamp-1.svg" alt="">
     </div>
-    <script src="/scripts/brightness-mode.js"></script>
-    <script src="/scripts/selected-box.js"></script>
-    <script src="/scripts/input-file.js"></script>
-    <script src="/scripts/addField.js"></script>
+    <script src="scripts/brightness-mode.js"></script>
+    <script src="scripts/selected-box.js"></script>
+    <script src="scripts/input-file.js"></script>
+    <script src="scripts/addField.js"></script>
 
 </body>
 

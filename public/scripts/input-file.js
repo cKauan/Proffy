@@ -4,7 +4,10 @@ var $input = document.getElementById('avatar'),
     $modal = document.getElementById('modal'),
     $cancelButton = document.getElementById('cancelar'),
     $confirmButton = document.getElementById('confirmar'),
-    $closeItem = document.getElementById('close-item');
+    $closeItem = document.getElementById('close-item'),
+    $hiddenInput = document.getElementById('hidden-text');
+
+
 $modal.style.display = 'none';
 const img = document.createElement("img");
 
@@ -14,9 +17,12 @@ $input.addEventListener('change', function () {
     $modal.style.display = 'block';
     $confirmButton.addEventListener('click', () => {
         getImage(img);
+        // $hiddenInput.innerHTML = img.src;
+        // $hiddenInput.childNodes[0].nodeValue = img.src;
         $labelText.style.backgroundColor = '#3ce98a';
         $labelText.style.borderStyle = 'solid';
         $labelText.style.color = '#fff';
+        $hiddenInput.value = img.src;
         $fileName.appendChild(img);
         $labelText.innerHTML = 'Arquivo adicionado com sucesso';
         $modal.style.display = 'none';

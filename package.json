@@ -1,0 +1,28 @@
+{
+  "name": "nlw2",
+  "version": "1.0.0",
+  "description": "![alt text](https://github.com/cKauan/next-level-week-v2/blob/master/github/notebook.png)\r # :rocket: Proffy\r Este Projeto foi desenvolvido juntamente com a semana Next Level Week",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cKauan/next-level-week-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cKauan/next-level-week-v2/issues"
+  },
+  "homepage": "https://github.com/cKauan/next-level-week-v2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "nunjucks": "^3.2.2",
+    "uniq": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
