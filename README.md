@@ -27,7 +27,8 @@ git clone https://github.com/cKauan/next-level-week-v2.git
 </p>
 
 ## Features
-
+<img src="https://github.com/cKauan/Proffy/blob/master/github/feature-1.png"> 
+<img src="https://github.com/cKauan/Proffy/blob/master/github/feature-2.png">
 
 ## :raised_hand: Contribuições
 Para sugestões, abra um "issue", sinta-se confortável para o fazer.
