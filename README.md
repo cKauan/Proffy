@@ -12,10 +12,8 @@ Clone o repositório
 ```bash
 git clone https://github.com/cKauan/next-level-week-v2.git
 ```
-## :iphone: Capturas de Tela
-<img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone.jpg" width="180" height="300"> <img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone-2.jpg" width="180" height="300"> <img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone-3.jpg" width="180" height="300">
 
-## Tecnologias Utilizadas 
+## :brain: Tecnologias Utilizadas 
 <p align="left">
   <img src="https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
   <img src="https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
@@ -26,10 +24,13 @@ git clone https://github.com/cKauan/next-level-week-v2.git
 
 </p>
 
-## Features
-- [x] O usuário pode inserir uma imagem de sua máquina, ao invés da URL</p>
+## :iphone: Capturas de Tela
+<img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone.jpg" width="180" height="300"> <img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone-2.jpg" width="180" height="300"> <img src="https://github.com/cKauan/next-level-week-v2/blob/master/github/smartphone-3.jpg" width="180" height="300">
 
-- [x] O usuário pode alterar entre o modo noturno e claro (:hammer: Building)</p>
+## :new: Features
+- [x] O usuário pode inserir uma imagem de sua máquina, ao invés da URL
+
+- [x] O usuário pode alterar entre o modo noturno e claro (:hammer: Building)
 
 ## :raised_hand: Contribuições
 Para sugestões, abra um "issue", sinta-se confortável para o fazer.
