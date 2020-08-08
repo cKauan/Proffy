@@ -27,9 +27,9 @@ git clone https://github.com/cKauan/next-level-week-v2.git
 </p>
 
 ## Features
-<p>:paperclip:O usuário pode inserir uma imagem de sua máquina, ao invés da URL</p>
+- [x] O usuário pode inserir uma imagem de sua máquina, ao invés da URL</p>
 
-<p>:low_brightness:O usuário pode alterar entre o modo noturno e claro (:hammer: Building)</p>
+- [x] O usuário pode alterar entre o modo noturno e claro (:hammer: Building)</p>
 
 ## :raised_hand: Contribuições
 Para sugestões, abra um "issue", sinta-se confortável para o fazer.
