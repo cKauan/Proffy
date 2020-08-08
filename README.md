@@ -21,7 +21,8 @@ git clone https://github.com/cKauan/next-level-week-v2.git
   <img src="https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original.svg" alt="javascript" width="40" height="40"/>
   <img src="https://devicons.github.io/devicon/devicon.git/icons/express/express-original.svg" alt="javascript" width="40" height="40"/>
   <img src="https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg" alt="javascript" width="40" height="40"/>
-
+  <br>
+  <br>
 </p>
 
 ## :iphone: Capturas de Tela
