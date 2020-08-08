@@ -27,9 +27,9 @@ git clone https://github.com/cKauan/next-level-week-v2.git
 </p>
 
 ## Features
-<p>O usuário pode inserir uma imagem de sua máquina, ao invés da URL <img src="https://github.com/cKauan/Proffy/blob/master/github/feature-1.png"></p>
+<p>:paperclip:O usuário pode inserir uma imagem de sua máquina, ao invés da URL</p>
 
-<p>O usuário pode alterar entre o modo noturno e claro (:hammer: Building) <img src="https://github.com/cKauan/Proffy/blob/master/github/feature-2.png"></p>
+<p>:low_brightness:O usuário pode alterar entre o modo noturno e claro (:hammer: Building)</p>
 
 ## :raised_hand: Contribuições
 Para sugestões, abra um "issue", sinta-se confortável para o fazer.
