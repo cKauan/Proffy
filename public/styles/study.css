@@ -40,6 +40,17 @@
     margin: 3.2rem auto;
     width: 90%;
 }
+.no-results-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12rem;
+}
+.no-results {
+    max-width: 30rem;
+    text-align: center;
+}
 
 .teacher-item {
     background-color: var(--color-box-base);
@@ -137,7 +148,9 @@
     .top-bar-container {
         max-width: 1100;
     }
-
+    .no-results-div {
+        flex-direction: row;
+    }
     .header-content {
         margin: 0 auto;
         max-width: 740px;
@@ -184,6 +197,10 @@
         height: 10px;
         top: 40px;
         background-size: 10px 10px;
+    }
+    .header-content
+    .select-selected {
+        width: 18rem;
     }
     .select-selected.select-arrow-active:after {
         top: 40px;

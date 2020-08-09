@@ -5,3 +5,6 @@ document.querySelector("#add-time").addEventListener('click', () => {
     fields[1].value = "";
     document.querySelector('#schedule-items').appendChild(newFieldContainer)
 })
+
+// Implementar funcionalidade de excluir horarios não selecionados
+// Implementar página de sucesso!

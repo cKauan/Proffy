@@ -88,7 +88,18 @@
     transition: 0.2s;
     margin-top: 3.2rem;
 }
-
+.schedule-item  { position: relative; }
+.schedule-item img { display: none }
+.schedule-item+.schedule-item span {
+    position: absolute;
+    right: 5px;
+}
+.schedule-item+.schedule-item img {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
 .schedule-item+.schedule-item {
     margin-top: 3.2rem;
     padding-top: 3.2rem;

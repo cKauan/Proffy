@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/study.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/colors.css">
@@ -55,7 +53,7 @@
                         <label for="" id="main-label-avatar">Foto de Perfil</label>
                         <label for="avatar" id="label-avatar">Selecione um arquivo</label>
                         <input type="text" name="avatar" id="hidden-text" hidden>
-                        <input type="file" name="avatar1" id="avatar" accept="image/*" required>
+                        <input type="file" name="avatar-input" id="avatar" accept="image/*" required>
                         <!-- <input type="file" name="avatar" id="avatar" accept="image/*" required> -->
                         <div id='file-name'>
                         </div>
@@ -97,6 +95,9 @@
                     </legend>
                     <div class="schedule-item">
                         <div class="select-block">
+                            <span>
+                                <img id="delete-items" src="images/icons/close.svg" alt="">
+                            </span>
                             <label for="weekday">Dia da semana</label>
                             <select name="weekday[]" required>
                                 <option value="-1">Selecione</option>
