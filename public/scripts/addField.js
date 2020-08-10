@@ -8,3 +8,4 @@ document.querySelector("#add-time").addEventListener('click', () => {
 
 // Implementar funcionalidade de excluir horarios não selecionados
 // Implementar página de sucesso!
+// Implementar modo noturno e claro

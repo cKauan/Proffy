@@ -48,6 +48,7 @@
     margin-top: 12rem;
 }
 .no-results {
+    color: var(--color-text-label-1);
     max-width: 30rem;
     text-align: center;
 }
