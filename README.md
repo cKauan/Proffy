@@ -2,13 +2,47 @@
 # :rocket: Proffy
 Este Projeto foi desenvolvido juntamente com a semana Next Level Week
 
-## :closed_book: Uso
 
-Clone o repositório
+## Instalação
+Você precisa ter o NodeJs ou Yarn instalado em sua máquina
+<ul>
+<h3> Módulos Necessários </h3>
+<li>Instalando Express </li>  
 
 ```bash
-git clone https://github.com/cKauan/next-level-week-v2.git
+npm install express
+```  
+<li>Instalando o sqlite-async </li>  
+
+```bash
+npm install sqlite-async
+```  
+<li>Instalando o nunjucks </li>  
+
+```bash
+npm install nunjucks
+```  
+
+<li>Instalando o multer </li>  
+
+```bash
+npm install multer
+```  
+</ul>
+
+## :closed_book: Uso
+<ul>
+<li>Clone o repositório</li>
+
+```bash
+git clone https://github.com/cKauan/Proffy.git
 ```
+<li>Inicie a aplicação com o seguinte comando</li>
+
+```bash
+npm run dev
+```
+</ul>
 
 ## :brain: Tecnologias Utilizadas 
 <p align="left">
@@ -28,7 +62,7 @@ git clone https://github.com/cKauan/next-level-week-v2.git
 ## :new: Features
 - [x] O usuário pode inserir uma imagem de sua máquina, ao invés da URL
 
-- [x] O usuário pode alterar entre o modo noturno e claro (:hammer: Building)
+- [x] O usuário pode alterar entre o modo noturno e claro
 
 ## :raised_hand: Contribuições
 Para sugestões, abra um "issue", sinta-se confortável para o fazer.
