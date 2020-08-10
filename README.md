@@ -7,6 +7,11 @@ Este Projeto foi desenvolvido juntamente com a semana Next Level Week
 Você precisa ter o NodeJs ou Yarn instalado em sua máquina
 <ul>
 <h3> Módulos Necessários </h3>
+<li>Instalando Nodemon </li>  
+
+```bash
+npm install -g nodemon
+```  
 <li>Instalando Express </li>  
 
 ```bash
