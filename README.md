@@ -2,9 +2,6 @@
 # :rocket: Proffy
 Este Projeto foi desenvolvido juntamente com a semana Next Level Week
 
-## :bookmark: WebSite
-:hammer: Em construção :hammer:
-
 ## :closed_book: Uso
 
 Clone o repositório
